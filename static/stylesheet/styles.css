@@ -1,0 +1,88 @@
+@font-face {
+    font-family: Libre Baskerville;
+    src: url(\librebaskerville-regular.ttf librebaskerville-italic.ttf librebaskerville-bold.ttf);
+}
+body{
+    color: #fefdfd;
+    background-color:  rgba(22,24,200,0.3);;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    font-family: Libre Baskerville;
+}
+.purple-background{
+    background-color: rgba(22,24,200,0.3);
+}
+.head-container{
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+.main-img{
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+.centered-text{
+    text-align: center;
+}
+#greet{
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.button {
+    background-color: rgba(22,24,200,0.3);
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 30%;
+}
+.button:hover {
+    background-color: #c3b9b7;
+    color: black;
+}
+.footer-img{
+    border-radius: 35%;
+    height: 2.6%;
+    width: 2.6%;  
+}
+.svg-img{
+    background-color: white;
+}
+.laptop-img{
+    margin-left: 2em;
+}
+.main-icon-size{
+    height: 3%;
+    width: 3%; 
+}
+.book-img{
+    float: right;
+    margin-top: 38%;
+    margin-right: 2%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color:rgba(22,24,200,0.3)
+}
+.video{
+    width:auto;
+    height: 22.5em;
+}
+
+
+  
