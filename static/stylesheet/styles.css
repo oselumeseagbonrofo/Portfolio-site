@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-@font-face {
-    font-family: Libre Baskerville;
-    src: url(\librebaskerville-regular.ttf librebaskerville-italic.ttf librebaskerville-bold.ttf);
-}
-
 :root {
     --retro-bg: #008080;
     --retro-window: #c0c0c0;
@@ -29,7 +24,7 @@ body{
     width: 100%;
     font-family: "Press Start 2P", "Courier New", monospace;
     line-height: 1.6;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 main {
@@ -117,6 +112,7 @@ main section {
     cursor: pointer;
     border-radius: 4px;
     box-shadow: 2px 2px 0 #000000;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
 }
 
 .button:hover {
