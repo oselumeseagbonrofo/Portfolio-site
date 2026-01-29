@@ -1,88 +1,174 @@
-@font-face {
-    font-family: Libre Baskerville;
-    src: url(\librebaskerville-regular.ttf librebaskerville-italic.ttf librebaskerville-bold.ttf);
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+    --retro-bg: #008080;
+    --retro-window: #c0c0c0;
+    --retro-shadow: #3f3f3f;
+    --retro-highlight: #fefefe;
+    --retro-accent: #000080;
+    --retro-text: #1a1a1a;
+    --retro-link: #0000ee;
+    --retro-glow: #00ff9c;
 }
+
+* {
+    box-sizing: border-box;
+}
+
 body{
-    color: #fefdfd;
-    background-color:  rgba(22,24,200,0.3);;
+    color: var(--retro-text);
+    background-color: var(--retro-bg);
     margin: 0;
     padding: 0;
-    height: 100vh;
-    width: 100vw;
-    font-family: Libre Baskerville;
+    min-height: 100vh;
+    width: 100%;
+    font-family: "Press Start 2P", "Courier New", monospace;
+    line-height: 1.6;
+    font-size: 16px;
 }
+
+main {
+    padding: 2rem 1rem 3rem;
+}
+
+main section {
+    background-color: var(--retro-window);
+    border: 3px solid var(--retro-shadow);
+    box-shadow: -3px -3px 0 var(--retro-highlight), 6px 6px 0 #000000;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    max-width: 980px;
+}
+
 .purple-background{
-    background-color: rgba(22,24,200,0.3);
+    background-color: var(--retro-window);
+    border: 3px solid var(--retro-shadow);
+    box-shadow: -3px -3px 0 var(--retro-highlight), 6px 6px 0 #000000;
 }
+
 .head-container{
     position: sticky;
     top: 0;
     width: 100%;
+    z-index: 10;
 }
+
+.navbar {
+    background: linear-gradient(90deg, var(--retro-accent), #00224d);
+    border-bottom: 3px solid #000000;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: var(--retro-highlight) !important;
+    text-shadow: 1px 1px 0 #000000;
+}
+
+.navbar-nav .nav-link.active {
+    background-color: var(--retro-window);
+    color: var(--retro-text) !important;
+    border: 2px solid var(--retro-shadow);
+    padding: 0.35rem 0.75rem;
+    margin-right: 0.5rem;
+    box-shadow: inset -2px -2px 0 var(--retro-shadow), inset 2px 2px 0 var(--retro-highlight);
+}
+
 .main-img{
-    border-radius: 50%;
+    border-radius: 12px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 25%;
+    width: 26%;
+    border: 3px solid var(--retro-shadow);
+    box-shadow: 4px 4px 0 #000000;
 }
+
 .centered-text{
     text-align: center;
 }
+
 #greet{
-    margin-bottom: 0;
-    padding: 0;
+    margin: 1.5rem auto 0;
+    padding: 1rem;
+    background-color: #000000;
+    color: var(--retro-glow);
+    border: 3px solid var(--retro-shadow);
+    max-width: 700px;
+    text-shadow: 0 0 6px rgba(0, 255, 156, 0.6);
 }
 
 .button {
-    background-color: rgba(22,24,200,0.3);
-    border: none;
-    color: white;
-    padding: 16px 32px;
+    background-color: var(--retro-window);
+    border: 2px solid var(--retro-shadow);
+    border-top-color: var(--retro-highlight);
+    border-left-color: var(--retro-highlight);
+    color: var(--retro-text);
+    padding: 12px 28px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
+    font-size: 14px;
+    margin: 6px 2px;
     cursor: pointer;
-    border-radius: 30%;
+    border-radius: 4px;
+    box-shadow: 2px 2px 0 #000000;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
 }
+
 .button:hover {
-    background-color: #c3b9b7;
-    color: black;
+    background-color: #e6e6e6;
+    color: var(--retro-text);
 }
+
 .footer-img{
-    border-radius: 35%;
-    height: 2.6%;
-    width: 2.6%;  
+    border-radius: 6px;
+    height: 36px;
+    width: 36px;  
+    margin: 0 6px;
 }
+
 .svg-img{
-    background-color: white;
+    background-color: var(--retro-highlight);
+    border: 2px solid var(--retro-shadow);
+    padding: 4px;
 }
+
 .laptop-img{
     margin-left: 2em;
 }
+
 .main-icon-size{
-    height: 3%;
-    width: 3%; 
+    height: 32px;
+    width: 32px; 
 }
+
 .book-img{
     float: right;
-    margin-top: 38%;
+    margin-top: 3%;
     margin-right: 2%;
 }
+
 a{
     text-decoration: none;
-    color: white;
+    color: var(--retro-link);
 }
+
 a:hover{
-    color:rgba(22,24,200,0.3)
+    color: #ff00ff;
 }
+
+ol,
+ul {
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.75rem;
+}
+
 .video{
     width:auto;
     height: 22.5em;
+    border: 3px solid var(--retro-shadow);
+    box-shadow: 4px 4px 0 #000000;
 }
-
-
-  
